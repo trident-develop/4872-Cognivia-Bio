@@ -28,9 +28,11 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.graphics.drawscope.Stroke
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import com.takeonecompany.bp.R
 import com.takeonecompany.bp.ui.theme.GreenBgBottom
 import com.takeonecompany.bp.ui.theme.GreenBgTop
 import com.takeonecompany.bp.ui.theme.GreenDeep
@@ -96,7 +98,7 @@ fun LoadingScreen() {
             Spacer(Modifier.height(28.dp))
 
             Text(
-                text = "Cognivia Bion",
+                text = stringResource(R.string.app_name),
                 style = MaterialTheme.typography.displaySmall.copy(fontWeight = FontWeight.Bold),
                 color = GreenDeep,
                 textAlign = TextAlign.Center
