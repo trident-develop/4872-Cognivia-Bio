@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Android app "Cognivia Bio" — single-module Jetpack Compose application.
 
-- **Package / applicationId:** `com.takeonecompany.bp` (note: differs from the display name)
+- **Package / applicationId:** `show.g` (note: differs from the display name)
 - **Android:** `minSdk = 24`, `targetSdk = 36`, `compileSdk = 36.1`
 - **Java / Kotlin:** JVM target 11, Kotlin `2.2.10` with the Compose compiler plugin (`org.jetbrains.kotlin.plugin.compose`)
 - **AGP:** `9.1.1`, **Compose BOM:** `2026.02.01`
@@ -23,7 +23,7 @@ Run from the repo root. `./gradlew` expects a Java toolchain resolved via the fo
 ./gradlew lint                       # Android Lint
 ./gradlew test                       # JVM unit tests (app/src/test)
 ./gradlew connectedDebugAndroidTest  # instrumented tests (app/src/androidTest) — needs a device
-./gradlew :app:testDebugUnitTest --tests "com.takeonecompany.bp.ExampleUnitTest.addition_isCorrect"  # single unit test
+./gradlew :app:testDebugUnitTest --tests "show.g.ExampleUnitTest.addition_isCorrect"  # single unit test
 ```
 
 ## Architecture notes
